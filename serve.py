@@ -10,7 +10,7 @@ from langchain_core.prompts import ChatPromptTemplate
 
 load_dotenv()
 
-
+groq_api_key = os.getenv("GROQ_API_KEY")
 gemma_model = ChatGroq(model="Gemma2-9b-It", groq_api_key=groq_api_key)
 
 system_template = "Translate the following into {language} : "
